@@ -1,4 +1,5 @@
-# file-compression-and-decompression-toolOverview
+# file-compression-and-decompression-tool
+## Overview
 This project is a file compression and decompression tool implemented in C using the Huffman Coding algorithm. It efficiently compresses files by assigning shorter binary codes to frequently occurring characters, reducing the overall file size while ensuring lossless data recovery during decompression.
 
 ## Features
