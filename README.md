@@ -34,11 +34,16 @@ gcc huffman.c -o huffman
 #### To decompress a file:
 ./huffman.c d <compressed_file> <output_file>
 
+#### To find huffman code of a single character:
+./huffman.c x <character> <output_file>
+
 ### Example
 #### Compress input.txt:
 ./huffman.c c input.txt compressed.bin
 #### Decompress compressed.bin:
 ./huffman.c d compressed.bin decompressed.txt
+#### Find huffman code of a character:
+./huffman.c x input.txt compressed.bin
 
 ## Technical Details
 Algorithm: Huffman Coding
