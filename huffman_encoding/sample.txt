@@ -1,0 +1,4 @@
+sample file
+
+hello world
+This is a file compression and decompression tool
