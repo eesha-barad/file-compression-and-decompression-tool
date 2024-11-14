@@ -4,6 +4,7 @@ This project is a file compression and decompression tool implemented in C using
 
 ## Features
 File Compression: Compresses input files using Huffman coding to reduce file size.
+
 File Decompression: Restores the original content from a compressed file.
 Single Source File: Both compression and decompression functionalities are implemented in a single source file for simplicity.
 Ensures lossless data recovery.
@@ -19,36 +20,24 @@ Writes the compressed binary data and Huffman tree metadata to a new file.
 Reads the Huffman tree metadata from the compressed file header.
 Reconstructs the Huffman Tree.
 Decodes the binary data back into the original file content.
+
 ## How to Use
 ### Prerequisites
 A C compiler (e.g., GCC).
 Basic understanding of the command line.
 ### Compilation
-Run the following command to compile the project:
-
-bash
-make
-Or, compile directly with:
-
-bash
+Run the following command on bash to compile the project:
 gcc huffman.c -o huffman
-Usage
-To compress a file:
-
-bash
-Copy code
+#### To compress a file:
 ./huffman.c c <input_file> <output_file>
-To decompress a file:
 
-bash
-Copy code
+#### To decompress a file:
 ./huffman.c d <compressed_file> <output_file>
+
 ### Example
-Compress input.txt:
-bash
+#### Compress input.txt:
 ./huffman.c c input.txt compressed.bin
-Decompress compressed.bin:
-bash
+#### Decompress compressed.bin:
 ./huffman.c d compressed.bin decompressed.txt
 
 ## Technical Details
